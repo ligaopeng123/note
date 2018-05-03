@@ -1,0 +1,95 @@
+$background : #00c091;
+$width : 100%;
+$position : fixed;
+$backgroundBody : #F6F6F6;
+$text_color:#fff;
+$body_padding : 10px;
+@keyframes myfirst
+{
+  0%   {color: $background;}
+  100% {color: $text_color;}
+}
+$animation : myfirst 1s;
+body{
+  background: $backgroundBody;
+}
+a{
+  text-decoration:none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.panel_body{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.header_nav {
+  position: $position;
+  top: 0;
+  left: 0;
+  z-index: 97;
+  width: 100%;
+  height: 38px;
+  background: $background;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+}
+.header_nav_text {
+  position: $position;
+  top: 0;
+  left: 50%;
+  width: 320px;
+  height: 38px;
+  line-height: 38px;
+  margin-left: -107px;
+  color: $text_color;
+  animation:$animation;
+}
+.wbdCv_leftbar {
+  position: $position;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 220px;
+  height: 100%;
+  padding-top: 38px;
+  border-right: 1px solid #2bd8ae;
+  background: $background;
+  overflow: hidden;
+  transition: all 0.3s;
+  resume_content_editor {
+    width: 100%;
+    height: 153px;
+    padding: 18px 0 0;
+  }
+}
+.wbdCv-leftbar_ui {
+  list-style-type: none;
+}
+
+.wbdCv-leftbar_a{
+  display: block;
+  width: 100%;
+  line-height: 16px;
+  padding: 13px 0 13px 13px;
+  font-size: 14px;
+  color: $text_color;
+  animation:$animation;
+}
+.wbdCv_body {
+  position: $position;
+  padding-left: 240px;
+  padding-top:40px;
+  max-width: 800px;
+  background: $backgroundBody;
+  width: 80%;
+  transition: all 0.3s;
+}
+.body_padding {
+  padding : $body_padding;
+}
+.title_padding {
+  padding :$body_padding 0px;
+  color : rgb(107, 115, 127);
+}
