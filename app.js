@@ -199,7 +199,7 @@ var App = App || {};
      * @param arr
      * @returns {Array}
      */
-    App.removeRepeat = function(val){
+    App.uniqueArr = function(val){
         if(App.isArray(val)){
             /*
 				Es6 利用解构和Set方法
