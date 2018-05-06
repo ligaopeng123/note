@@ -7,16 +7,32 @@ body {
   background: #F6F6F6; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px; }
+
+a:hover, a:active {
+  color: #ececec; }
+
+input:focus {
+  outline: none; }
+
+a:hover > input {
+  border: 1px solid #2bd8ae; }
 
 li {
   display: list-item;
   text-align: -webkit-match-parent; }
 
 .panel_body {
-  margin: 0;
+  margin-top: 38px;
   padding: 0;
-  border: none; }
+  border: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: auto; }
 
 .header_nav {
   position: fixed;
@@ -38,15 +54,21 @@ li {
   margin-left: -107px;
   color: #fff;
   animation: myfirst 1s; }
+  .header_nav_text input {
+    border: none;
+    color: #fff;
+    background: #00c091;
+    width: 100%; }
 
 .wbdCv_leftbar {
   position: fixed;
+  float: left;
   top: 0;
   left: 0;
   z-index: 10;
   width: 220px;
   height: 100%;
-  padding-top: 38px;
+  margin-top: 38px;
   border-right: 1px solid #2bd8ae;
   background: #00c091;
   overflow: hidden;
@@ -70,18 +92,22 @@ li {
 
 .wbdCv_body {
   position: fixed;
-  padding-left: 240px;
-  padding-top: 40px;
-  max-width: 800px;
+  padding-left: 0px;
+  padding-top: 0px;
+  height: 100%;
+  margin-left: 221px;
   background: #F6F6F6;
-  width: 80%;
+  width: 100%;
   transition: all 0.3s; }
 
 .body_padding {
-  padding: 10px; }
+  padding: 20px; }
 
 .title_padding {
-  padding: 10px 0px;
+  padding: 10px;
   color: #6b737f; }
+
+.content_padding {
+  padding: 10px 0 0 20px; }
 
 /*# sourceMappingURL=card.css.map */

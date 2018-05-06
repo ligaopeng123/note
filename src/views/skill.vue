@@ -1,7 +1,7 @@
 <template>
   <div class="body_padding">
     <modelTitle title="专业技能"></modelTitle>
-    <div id="dashboard_skill_svg"></div>
+    <div class="content_padding" id="dashboard_skill_svg"></div>
   </div>
 </template>
 <script>
@@ -22,8 +22,8 @@
         methods : {
           getSvgDom(){
             var height = 200;	//画布的高度
-            var width = this.$el.parentNode.offsetWidth-240 || 400;
-            console.log(this.$el)
+            var width = this.$el.parentNode.offsetWidth-301;
+
             var svg = d3.select('#dashboard_skill_svg')//选择文档中的body元素
               .append("svg")				//添加一个svg元素
               .attr("width", width)		//设定宽度

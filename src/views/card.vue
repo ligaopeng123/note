@@ -1,10 +1,12 @@
 <template>
+  <div>
+    <nav-header></nav-header>
     <div class="panel_body">
-      <nav-header></nav-header>
       <nav-left></nav-left>
       <nav-body></nav-body>
-      <nav-footer></nav-footer>
     </div>
+    <nav-footer></nav-footer>
+  </div>
 </template>
 
 <script>
