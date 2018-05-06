@@ -98,6 +98,7 @@ li {
   margin-left: 221px;
   background: #F6F6F6;
   width: 100%;
+  overflow: hidden;
   transition: all 0.3s; }
 
 .body_padding {
